@@ -1,0 +1,23 @@
+# 配置Core中的ServerUrl为http的端口
+http.ServerUrl=0.0.0.0
+http.port=8080
+
+# 配置websocket,与http不是同一个协议，端口不冲突，默认不加密
+websocket.Url=0.0.0.0
+websocket.port=8080
+
+# websocket 认证与会话
+websocket.singleMode=false
+websocket.enableVerify=false
+
+# ws adapter 拥有三个连接通道 message: 推送消息 event: 推送事件 all: 推送消息及事件
+websocket.adapter=all
+
+# 绑定的账号, singleMode 模式下为空, 非 singleMode 下新建连接不可为空
+websocket.qq=##########
+
+# enableVerify=false 时，可不填
+websocket.verifyKey=1234567890
+
+# 新建连接 或 singleMode 模式下为空, 通过已有 sessionKey 连接时不可为空
+websocket.sessionKey=UnVerifiedSession

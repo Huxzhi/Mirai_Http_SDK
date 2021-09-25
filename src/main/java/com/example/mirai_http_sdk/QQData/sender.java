@@ -5,16 +5,16 @@ import lombok.Data;
 @Data
 public class sender {
 
-  public       String id;
-  public       String memberName;
-    public       String nickname;
-    public      String remark;
-    public      String specialTitle;
-    public      String permission;
-    public       String joinTimestamp;
-    public      String lastSpeakTimestamp;
-    public     String muteTimeRemaining;
-    public     group group;
-    public  String platform;
+    public String id;
+    public String memberName;
+    public String nickname;
+    public String remark;
+    public String specialTitle;
+    public String permission;
+    public String joinTimestamp;
+    public String lastSpeakTimestamp;
+    public String muteTimeRemaining;
+    public group group;
+    public String platform;
 
-   }
+}

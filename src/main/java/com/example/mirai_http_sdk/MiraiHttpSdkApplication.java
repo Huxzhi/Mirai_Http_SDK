@@ -8,5 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 public class MiraiHttpSdkApplication {
     public static void main(String[] args) {
         SpringApplication.run(MiraiHttpSdkApplication.class, args);
+
+
+
     }
 }

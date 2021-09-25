@@ -5,8 +5,11 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.example.mirai_http_sdk.QQData.QQMassageData;
 //import com.example.mirai_http_sdk.Utils.OKHttpUtils;
+import com.example.mirai_http_sdk.QQData.WbProperties;
+import com.example.mirai_http_sdk.QQData.httpProperties;
 import com.example.mirai_http_sdk.Utils.OKHttpUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,8 +25,12 @@ import java.util.List;
 public class Core {
 
 
+	@Autowired
+	private httpProperties httpProperties;
+
+
 	/*服务器的地址，http用*/
-	public static String ServerUrl="http://localhost.top:8081/";
+	public static String ServerUrl="http://8.141.48.181:8080/";
 
 	/**
 	 * 打包文字聊天内容

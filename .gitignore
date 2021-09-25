@@ -37,6 +37,7 @@ classes/
 *.tmp
 *.swp
 
+
 # system ignore
 .DS_Store
 Thumbs.db
@@ -54,3 +55,6 @@ hs_err_pid*
 .sass-cache/
 *.css.map
 src/main/resources/application.properties
+
+# 为了方便测试，将配置文件忽略，使用时将文件application.properties.default改回application.properties
+application.properties
